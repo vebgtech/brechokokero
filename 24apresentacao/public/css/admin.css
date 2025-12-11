@@ -1,0 +1,291 @@
+/* ===========================
+   ESTILOS DO PAINEL ADMINISTRATIVO
+=========================== */
+.admin-header {
+    background-color: var(--verde-musgo);
+    color: var(--branco);
+    padding: 2rem 1rem;
+    text-align: center;
+    border-bottom: 3px solid var(--amarelo);
+}
+
+.admin-header h2 {
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+    color: var(--amarelo);
+}
+
+.admin-header p {
+    font-size: 1.1rem;
+    opacity: 0.9;
+    margin-bottom: 0;
+}
+
+.btn-primary {
+    background-color: var(--verde-musgo);
+    border-color: var(--verde-musgo);
+    font-weight: 600;
+}
+
+.btn-primary:hover {
+    background-color: var(--verde-escuro);
+    border-color: var(--verde-escuro);
+    transform: translateY(-2px);
+    transition: all 0.3s ease;
+}
+
+.card {
+    border-radius: 1rem;
+    box-shadow: 0 0.125rem 0.5rem rgba(0, 0, 0, 0.1);
+    border: none;
+    background: var(--branco);
+}
+
+.section-header {
+    background: linear-gradient(135deg, #e9ecef 0%, #dee2e6 100%);
+    border-radius: 0.5rem;
+    padding: 1.5rem;
+    margin-bottom: 2rem;
+    border-left: 4px solid var(--verde-musgo);
+}
+
+.section-header h4 {
+    color: var(--verde-musgo);
+    font-weight: 700;
+    margin-bottom: 0;
+}
+
+.section-header h4 i {
+    color: var(--amarelo);
+    margin-right: 10px;
+}
+
+.table th {
+    background: linear-gradient(135deg, var(--verde-musgo) 0%, var(--verde-menos-claro) 100%);
+    color: var(--branco);
+    font-weight: 600;
+    border: none;
+    padding: 1rem;
+}
+
+.table td {
+    padding: 0.75rem;
+    vertical-align: middle;
+    border-color: #dee2e6;
+}
+
+.table-striped tbody tr:nth-of-type(odd) {
+    background-color: rgba(43, 94, 29, 0.05);
+}
+
+.table img {
+    max-width: 50px;
+    height: auto;
+    border-radius: 5px;
+    border: 2px solid #dee2e6;
+}
+
+.badge-promocao {
+    background-color: var(--amarelino);
+    color: var(--preto);
+    font-weight: 600;
+}
+
+.badge-vendido {
+    background-color: var(--vermelho);
+    color: var(--branco);
+    font-weight: 600;
+}
+
+#preview_imagem_atual {
+    max-width: 200px;
+    max-height: 200px;
+    border-radius: 8px;
+    margin-top: 10px;
+    display: block;
+    border: 3px solid var(--verde-musgo);
+}
+
+.marca, .estoque-quantidade {
+    display: none;
+    margin-top: 10px;
+    padding: 10px;
+    background-color: #f8f9fa;
+    border-radius: 4px;
+    border: 1px solid #dee2e6;
+}
+
+.marca[style*="display: block"],
+.estoque-quantidade[style*="display: block"] {
+    display: block;
+}
+
+.form-select, .form-control {
+    border-radius: 0.5rem;
+    border: 2px solid #dee2e6;
+    transition: all 0.3s ease;
+}
+
+.form-select:focus, .form-control:focus {
+    border-color: var(--verde-musgo);
+    box-shadow: 0 0 0 0.2rem rgba(43, 94, 29, 0.25);
+}
+
+.btn-warning {
+    background-color: var(--amarelino);
+    border-color: var(--amarelino);
+    color: var(--preto);
+}
+
+.btn-danger {
+    background-color: var(--vermelho);
+    border-color: var(--vermelho);
+}
+
+.btn-success {
+    background-color: var(--verde-claro);
+    border-color: var(--verde-claro);
+}
+
+.modal-header.bg-warning {
+    background: linear-gradient(135deg, var(--amarelino) 0%, #ffca2c 100%);
+    color: var(--preto);
+}
+
+.alert {
+    border-radius: 0.5rem;
+    border: none;
+    font-weight: 600;
+}
+
+@media (max-width: 768px) {
+    .admin-header {
+        padding: 1.5rem 1rem;
+    }
+    
+    .admin-header h2 {
+        font-size: 1.5rem;
+    }
+    
+    .section-header {
+        padding: 1rem;
+    }
+    
+    .table-responsive {
+        font-size: 0.9rem;
+    }
+    
+    .btn-sm {
+        padding: 0.25rem 0.5rem;
+        font-size: 0.8rem;
+    }
+}
+
+.btn:hover {
+    transform: translateY(-1px);
+    transition: all 0.3s ease;
+}
+
+.card:hover {
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+    transition: all 0.3s ease;
+}
+
+/* MODEL */
+.modal-header {
+    background-color: var(--preto);
+    border-bottom: 2px solid var(--verde-claro);
+}
+
+.modal-title {
+    font-weight: 600;
+}
+
+.btn-success {
+    background-color: var(--verde-claro);
+    border-color: var(--verde-claro);
+}
+
+.btn-success:hover {
+    background-color: #157347;
+    border-color: #146c43;
+}
+
+/* Adicione ao final do seu estilo.css */
+
+/* Estilos específicos do Admin */
+.badge-promocao {
+    background-color: #ff6b6b;
+    color: white;
+}
+
+.badge-vendido {
+    background-color: #6c757d;
+    color: white;
+}
+
+.table-hover tbody tr:hover {
+    background-color: rgba(0, 123, 255, 0.05);
+}
+
+.alert {
+    animation: fadeIn 0.3s ease-in;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(-10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+.img-thumbnail {
+    border: 1px solid #dee2e6;
+    padding: 3px;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .btn-group-vertical {
+        min-width: auto;
+        flex-direction: row !important;
+        flex-wrap: wrap;
+        gap: 5px;
+    }
+    
+    .btn-group-vertical .btn {
+        margin-bottom: 0;
+        flex: 1;
+        min-width: 80px;
+    }
+    
+    .table td, .table th {
+        padding: 0.5rem;
+        font-size: 0.9rem;
+    }
+}
+
+/* Estilo para pré-visualização de imagem */
+.img-preview {
+    max-width: 100%;
+    height: auto;
+    border: 2px dashed #ddd;
+    border-radius: 5px;
+    padding: 5px;
+    margin-top: 10px;
+}
+
+.img-preview img {
+    max-width: 100%;
+    max-height: 200px;
+    object-fit: contain;
+}
+
+/* Estilo para a imagem atual */
+.imagem-atual-container {
+    background-color: #f8f9fa;
+    border: 1px solid #dee2e6;
+    border-radius: 5px;
+    padding: 10px;
+    margin-bottom: 15px;
+}
+
+

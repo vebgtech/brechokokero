@@ -1,0 +1,185 @@
+{
+  "mysql": {
+    "1044": {
+      "message": "Usuário não possui permissões para acessar o banco.",
+      "explanation": "O usuário configurado no banco não tem privilégios suficientes para acessar este schema. Pode ser falta de GRANT, usuário errado, banco recém-criado sem permissões ou conexão em banco diferente do esperado."
+    },
+    "1045": {
+      "message": "Acesso negado: verifique usuário e senha.",
+      "explanation": "Usuário ou senha incorretos. Também pode ser host bloqueado ('host not allowed'), conta expirada, política de senha, ou tentativa de login a partir de máquina não autorizada."
+    },
+    "1049": {
+      "message": "Banco de dados não encontrado.",
+      "explanation": "O nome do banco (dbname) está errado ou não existe. Pode ser erro de digitação, database não criado ainda, ou conexão apontando para servidor errado."
+    },
+    "1054": {
+      "message": "Coluna inexistente na instrução SQL.",
+      "explanation": "A query faz referência a um campo que não existe na tabela. Pode ser erro de escrita, alteração recente no schema, ou tabela diferente da esperada."
+    },
+    "1062": {
+      "message": "Entrada duplicada: violação de chave única (UNIQUE).",
+      "explanation": "Um registro está tentando inserir um valor já existente em coluna com UNIQUE ou PRIMARY KEY. Pode ocorrer ao inserir e-mail repetido, CPF já cadastrado etc."
+    },
+    "1064": {
+      "message": "Erro de sintaxe SQL.",
+      "explanation": "Há erro na escrita da query. Pode ser palavra-chave errada, vírgula faltando, aspas mal fechadas ou valores mal formatados."
+    },
+    "1086": {
+      "message": "Tabela já existe.",
+      "explanation": "Tentativa de criar tabela com nome já existente. Pode ser execução duplicada de script SQL ou falta de IF NOT EXISTS."
+    },
+    "1146": {
+      "message": "Tabela não encontrada.",
+      "explanation": "A tabela informada não existe no schema atual. Pode ser erro de digitação, tabela não criada ou conexão apontando para outro banco."
+    },
+    "1216": {
+      "message": "Violação de integridade: chave estrangeira pai inexistente.",
+      "explanation": "Tentativa de inserir registro filho cuja referência pai não existe. Ex.: inserir venda para cliente inexistente."
+    },
+    "1217": {
+      "message": "Violação de integridade: registro referenciado por outra tabela.",
+      "explanation": "Tentativa de excluir registro ainda referenciado como chave estrangeira em outra tabela. Ex.: excluir cliente que possui vendas."
+    },
+    "1364": {
+      "message": "Campo obrigatório não foi preenchido.",
+      "explanation": "Um campo NOT NULL foi enviado sem valor. Pode indicar falta de validação no formulário ou campo obrigatório não preenchido."
+    },
+    "2002": {
+      "message": "Não foi possível conectar ao host informado.",
+      "explanation": "Host indisponível ou incorreto. Pode ser firewall bloqueando, servidor MySQL parado, porta incorreta ou DNS errado."
+    },
+    "2003": {
+      "message": "Servidor recusou a conexão.",
+      "explanation": "Servidor está ativo mas rejeitou a conexão. Pode ser porta errada, IP bloqueado ou limite de conexões atingido."
+    },
+    "2006": {
+      "message": "Servidor MySQL ficou indisponível.",
+      "explanation": "Perda de conexão durante a execução. Pode ser timeout, query muito grande, servidor reiniciando ou pacote inválido."
+    }
+  },
+
+  "pgsql": {
+    "08001": {
+      "message": "Falha ao estabelecer conexão com o PostgreSQL.",
+      "explanation": "Servidor inacessível, porta errada, firewall bloqueando ou serviço PostgreSQL parado."
+    },
+    "08006": {
+      "message": "Conexão com PostgreSQL abortada.",
+      "explanation": "Conexão foi encerrada inesperadamente. Pode ser timeout, perda de rede, queda do servidor ou reinício do PostgreSQL."
+    },
+    "23502": {
+      "message": "Campo obrigatório não informado (NOT NULL).",
+      "explanation": "Campo definido como NOT NULL não recebeu valor. Pode ser falha de validação ou dado faltante."
+    },
+    "23503": {
+      "message": "Violação de chave estrangeira.",
+      "explanation": "Tentativa de inserir ou excluir registro sem respeitar dependências entre tabelas. Pai inexistente ou filho dependente."
+    },
+    "23505": {
+      "message": "Violação de UNIQUE: registro duplicado.",
+      "explanation": "Tentativa de inserir valor já existente em campo com restrição UNIQUE. Ex.: em e-mail, CPF ou username."
+    },
+    "42601": {
+      "message": "Erro de sintaxe SQL.",
+      "explanation": "Query mal formada. Pode ser parêntese faltando, vírgula incorreta, aspas mal fechadas ou palavra-chave inválida."
+    },
+    "42703": {
+      "message": "Coluna não existe.",
+      "explanation": "Query faz referência a coluna inexistente. Tabela pode ter sido alterada ou nome digitado incorretamente."
+    },
+    "42P01": {
+      "message": "Tabela não existe.",
+      "explanation": "Tabela não foi criada ou banco errado está em uso. Pode ser preciso rodar migrações."
+    },
+    "42P07": {
+      "message": "Tabela já existe.",
+      "explanation": "Tentativa de criar tabela já presente. Pode ser migração duplicada."
+    },
+    "22003": {
+      "message": "Valor numérico fora do intervalo.",
+      "explanation": "Valor muito grande ou muito pequeno para o tipo numérico. Ex: BIGINT exigido mas INT enviado."
+    },
+    "42883": {
+      "message": "Função não existe.",
+      "explanation": "Função chamada não foi criada, está em schema diferente ou tem parâmetros incompatíveis."
+    }
+  },
+
+  "sqlite": {
+    "1": {
+      "message": "Erro SQL genérico.",
+      "explanation": "Query mal escrita ou tabela inexistente. SQLite é sensível a erros de tipo e sintaxe."
+    },
+    "8": {
+      "message": "Banco em modo somente leitura.",
+      "explanation": "Arquivo .sqlite não tem permissões de escrita ou está em mídia somente leitura. Ajustar permissões (chmod)."
+    },
+    "14": {
+      "message": "Erro ao acessar arquivo SQLite.",
+      "explanation": "Arquivo não encontrado ou sem permissão. Pode ser caminho errado ou falta de permissão no diretório."
+    },
+    "19": {
+      "message": "Violação de integridade (FK ou UNIQUE).",
+      "explanation": "Tentativa de inserir valor duplicado ou violar chave estrangeira."
+    },
+    "20": {
+      "message": "Erro interno.",
+      "explanation": "Erro raro geralmente relacionado a corrupção de arquivo ou instrução inválida."
+    },
+    "21": {
+      "message": "Tipo de dado incorreto.",
+      "explanation": "SQLite aceita tipos flexíveis, mas algumas operações requerem tipo adequado. Ex: comparar string com numero."
+    },
+    "1555": {
+      "message": "Violação de UNIQUE.",
+      "explanation": "Valor duplicado em campo que deve ser único."
+    },
+    "2067": {
+      "message": "Valor duplicado (UNIQUE).",
+      "explanation": "Inserção de valor repetido em índice único."
+    }
+  },
+
+  "sqlsrv": {
+    "2": {
+      "message": "Servidor SQL não encontrado.",
+      "explanation": "Nome do servidor incorreto, instância inexistente, porta errada ou rede bloqueada."
+    },
+    "53": {
+      "message": "Servidor recusou conexão.",
+      "explanation": "Firewall bloqueando, protocolo errado ou SQL Server configurado para permitir apenas conexões locais."
+    },
+    "18456": {
+      "message": "Acesso negado: credenciais inválidas.",
+      "explanation": "Usuário ou senha do SQL Server incorretos, conta bloqueada ou login desabilitado."
+    },
+    "4060": {
+      "message": "Banco de dados não pôde ser aberto.",
+      "explanation": "O banco existe, mas o usuário não possui permissão para acessá-lo ou o banco está offline."
+    },
+    "208": {
+      "message": "Tabela ou objeto não encontrado.",
+      "explanation": "A tabela não existe, está em outro schema ou o usuário não tem permissão para vê-la."
+    },
+    "2601": {
+      "message": "Violação de UNIQUE.",
+      "explanation": "Valor duplicado em índice único. Pode ser username, e-mail, CPF etc."
+    },
+    "2627": {
+      "message": "Violação de chave primária.",
+      "explanation": "Tentativa de inserir um valor já existente na PK da tabela."
+    },
+    "547": {
+      "message": "Violação de chave estrangeira.",
+      "explanation": "Tentativa de excluir ou atualizar registro referenciado por outra tabela."
+    },
+    "207": {
+      "message": "Coluna não existe.",
+      "explanation": "Erro de digitação na coluna, tabela diferente da esperada ou migração faltando."
+    },
+    "156": {
+      "message": "Erro de sintaxe SQL.",
+      "explanation": "Query mal formada: palavra-chave no lugar errado, parênteses faltando ou valores inválidos."
+    }
+  }
+}
