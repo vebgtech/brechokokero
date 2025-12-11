@@ -1,0 +1,141 @@
+{
+	"home": {
+		"path"		: "home.php",
+		"sessionKey": [],
+		"sanitize"	: {"requestVars": true,  "code": true, "sql": true },
+		"errorPath"	: "app/view/error.php"
+	},
+	"editar_perfil": {
+		"path"		: "app/view/editar_perfil.php",
+	    "sessionKey": [],
+		"sanitize"	: {"requestVars": true,  "code": true, "sql": true },
+		"errorPath"	: "app/view/error.php"
+	},
+	"api": {
+		"path"		: "app/api.php",
+	    "sessionKey": [],
+		"sanitize"	: {"requestVars": true,  "code": true, "sql": true },
+		"errorPath"	: "app/view/error.php"
+	},
+	"faq": {
+		"path"		: "app/view/faq.php",
+		"sessionKey": [],
+		"sanitize"	: {"requestVars": true,  "code": true, "sql": true },
+		"errorPath"	: "app/view/error.php"
+	},
+	"produto_detalhes": {
+		"path"		: "app/view/produto_detalhes.php",
+		"sessionKey": [],
+		"sanitize"	: {"requestVars": true,  "code": true, "sql": true },
+		"errorPath"	: "app/view/error.php"
+	},
+	"run":{
+		"path"		: "app/classbuilder/run.php",
+		"sessionKey": [],
+		"sanitize"	: {"requestVars": true,  "code": true, "sql": true },
+		"errorPath"	: "app/view/error.php"
+	},
+	"admin": {
+		"path"		: "app/view/admin.php",
+		"sessionKey": [],
+		"sanitize"	: {"requestVars": true,  "code": true, "sql": true },
+		"errorPath"	: "app/view/error.php"
+	},	
+	"cadastro": {
+		"path"		: "app/view/cadastre.php",
+		"sessionKey": [],
+		"sanitize"	: { "requestVars": true, "code" : true, "sql": true },
+		"errorPath"	: "app/view/error.php"
+	},
+	"login": {
+		"path"		: "app/view/log.php",
+		"sessionKey": [],
+		"sanitize"	: {"requestVars": true,  "code": true, "sql": true },
+		"errorPath"	: "app/view/error.php"
+	},
+	"produtos": {
+		"path"		: "app/view/produtos.php",
+		"sessionKey": [],
+		"sanitize"	: {"requestVars": true,  "code": true, "sql": true },
+		"errorPath"	: "app/view/error.php"
+	},
+	"404": {
+		"path"		: "app/view/error.php",
+		"sessionKey": [],
+		"sanitize"	: {"requestVars": true,  "code": true, "sql": true },
+		"errorPath"	: "app/views/error.php"
+	},
+	"minha_conta": {
+	  "path"		: "app/view/minha_conta.php",
+	  "sessionKey": [],
+	  "sanitize": { "requestVars": true, "code": true, "sql": true },
+	  "errorPath": "app/views/error.php"
+	},
+	"logout": {
+	  "path"		: "app/controller/logout.php",
+	  "sessionKey": [],
+	  "sanitize": { "requestVars": true, "code": true, "sql": true },
+	  "errorPath": "app/views/error.php"
+	},
+	"adicionar_carrinho": {
+	  "path"		: "app/controller/adicionar_carrinho.php",
+	  "sessionKey": [],
+	  "sanitize": { "requestVars": true, "code": true, "sql": true },
+	  "errorPath": "app/views/error.php"
+	},
+	"admincontroller": {
+	  "path"		: "app/controller/admincontroller.php",
+	  "sessionKey": [],
+	  "sanitize": { "requestVars": true, "code": true, "sql": true },
+	  "errorPath": "app/views/error.php"
+	},
+	"auth_check": {
+	  "path"		: "app/controller/auth_check.php",
+	  "sessionKey": [],
+	  "sanitize": { "requestVars": true, "code": true, "sql": true },
+	  "errorPath": "app/views/error.php"
+	},
+	"carrinho_controller": {
+	  "path"		: "app/controller/carrinho_controller.php",
+	  "sessionKey": [],
+	  "sanitize": { "requestVars": true, "code": true, "sql": true },
+	  "errorPath": "app/views/error.php"
+	},
+	"processar_cadastro": {
+	  "path"		: "app/controller/processar-cadastro.php",
+	  "sessionKey": [],
+	  "sanitize": { "requestVars": true, "code": true, "sql": true },
+	  "errorPath": "app/views/error.php"
+	},
+	"processar_login": {
+	  "path"		: "app/controller/processar-login.php",
+	  "sessionKey": [],
+	  "sanitize": { "requestVars": true, "code": true, "sql": true },
+	  "errorPath": "app/views/error.php"
+	},
+	"remover_carrinho": {
+	  "path"		: "app/controller/remover_carrinho.php",
+	  "sessionKey": [],
+	  "sanitize": { "requestVars": true, "code": true, "sql": true },
+	  "errorPath": "app/views/error.php"
+	},
+	"salvarproduto": {
+	  "path"		: "app/controller/salvarproduto.php",
+	  "sessionKey": [],
+	  "sanitize": { "requestVars": true, "code": true, "sql": true },
+	  "errorPath": "app/views/error.php"
+	},
+	"limpar_vendidos": {
+	  "path"		: "app/controller/limpar_vendidos.php",
+	  "sessionKey": [],
+	  "sanitize": { "requestVars": true, "code": true, "sql": true },
+	  "errorPath": "app/views/error.php"
+	},
+	"checkout": {
+	  "path"	: "app/view/checkout.php",
+	  "sessionKey": [],
+	  "sanitize": { "requestVars": true, "code": true, "sql": true },
+	  "errorPath": "app/views/error.php"
+	}
+	
+}

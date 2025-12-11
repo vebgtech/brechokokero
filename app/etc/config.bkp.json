@@ -1,0 +1,50 @@
+{
+	"database": {
+		"sgbd"		: "mysql",
+		"host"		: "localhost",
+		"username"	: "root",
+		"password"	: "password",
+		"dbname"	: "myApplicationDB",
+		"port"		: 3306,
+		"charset"	: "utf8mb4",
+		"persistent": false,
+		"file"		: "",
+		"options"	: { "timeout": 2000 }
+	},
+	"smtp": {
+		"host"		: "smtp.example.com",
+		"port"		: 587,
+		"username"	: "usuario",
+		"password"	: "senha",
+		"encryption": "tls",
+		"from_email": "no-reply@example.com",
+		"from_name"	: "Meu Sistema"
+	},
+	"sms": {
+		"api"		 : "twilio",
+		"account_sid": "SEU_ACCOUNT_SID_AQUI",
+		"auth_token" : "SEU_AUTH_TOKEN_AQUI",
+		"from"		 : "+15005550006",
+		"messaging_service_sid": "",
+		"default_country_code": "+55"
+	},
+	"path": {
+		"baseDir"	: "/var/www/html/project_name",
+		"public"	: "public/",
+		"scripts"	: "public/assets/scripts/",
+		"styles"	: "public/assets/styles/",
+		"images"	: "public/assets/images/",
+		"fonts"		: "public/assets/fonts/",
+		"sounds"	: "public/assets/sounds/",
+		"videos"	: "public/assets/videos/",
+		"uploadDir"	: "app/uploads/",
+		"controllers": "app/controllers/",
+		"models"	: "app/models/",
+		"views"		: "app/views/",
+		"appDir"	: "app/",
+		"logs"		: "app/logs/",
+		"files"		: "app/files/",
+		"routesFile": "app/etc/routes.json",
+		"pdoErrors"	: "app/etc/pdo_errors.json"
+	}
+}
